@@ -5,6 +5,8 @@ El desafío es construir esta sección de testimonio social y lograr que se pare
 - HTML
 - CSS
 
+![desktop-design](https://user-images.githubusercontent.com/112582420/188282227-149520c2-c366-457d-8fc0-662c985d4d1d.jpg)
+
 # Guía de Estilo
 
 ## Diseño
