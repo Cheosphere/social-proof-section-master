@@ -80,7 +80,7 @@ body {
 }
 
 .container_header_info_parag {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.55rem;
     letter-spacing: -0.0025rem;
     color: hsl(303, 10%, 58%);
@@ -130,7 +130,7 @@ body {
 
 .container_header_rating_card_title {
     margin-left: 1.8rem;
-    font-size: 17px;
+    font-size: 1.063rem;
     color: hsl(300, 43%, 22%);
 }
 
@@ -196,7 +196,7 @@ body {
 
 .container_footer_card_usercomment {
     font-weight: 300;
-    font-size: 17px;
+    font-size: 1.063rem;
     line-height: 1.37rem;
     letter-spacing: 0.005rem;
     color: hsl(0, 0%, 100%);
