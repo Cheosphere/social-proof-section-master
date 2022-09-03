@@ -1,0 +1,302 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+    background-color: rgb(33, 33, 33);
+}
+
+/* ESTILOS CONTAINER PRINCIPAL*/
+.container {
+    width: 1440px;
+    height: 800px;
+    padding: 7.35rem 10.35rem;
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 1;
+    transition: all .4s ease-out;
+}
+
+/* ESTILOS ZONA DE PATRÓN BACKGROUND */
+.bg-pattern-top {
+    width: 585px;
+    height: 365px;
+    position: absolute;
+    left: -5px;
+    top: 0;
+    background-image: url(images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transition: all .4s ease-out;
+}
+
+.bg-pattern-bottom {
+    width: 1090px;
+    height: 675px;
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    background-image: url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transition: all .4s ease-out;
+}
+
+/* ESTILOS CONTAINER HEADER */
+.container_header {
+    width: 100%;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    transition: all .4s ease-out;
+}
+
+.container_header_info {
+    width: 420px;
+    height: 250px;
+    transition: all .4s ease-out;
+}
+
+.container_header_info_title {
+    margin-bottom: 1.7rem;
+    font-size: 3.369rem;
+    letter-spacing: -.07rem;
+    line-height: 3rem;
+    color: hsl(300, 43%, 22%);
+}
+
+.container_header_info_parag {
+    font-size: 18px;
+    line-height: 1.55rem;
+    letter-spacing: -0.0025rem;
+    color: hsl(303, 10%, 58%);
+}
+
+/* ESTILOS ZONA CARDS ESTRELLAS */
+.container_header_rating {
+    width: 545px;
+    height: 232px;
+    margin-top: .7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    transition: all .4s ease-out;
+}
+
+.container_header_rating_card {
+    width: 445px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background-color: hsl(300, 24%, 96%);
+}
+
+.container_header_rating_card figure {
+    margin-top: 0.4rem;
+    margin-left: 2rem;
+}
+
+.container_header_rating_card:nth-child(1) {
+    margin-right: 5.9rem;
+}
+
+.container_header_rating_card:nth-child(2) {
+    margin-right: 2.9rem;
+}
+
+.container_header_rating_card:nth-child(3) {
+    margin-right: -0.05rem;
+}
+
+.container_header_rating_card_star {
+    margin-right: 4px;
+}
+
+.container_header_rating_card_title {
+    margin-left: 1.8rem;
+    font-size: 17px;
+    color: hsl(300, 43%, 22%);
+}
+
+/* ESTILOS CONTAINER FOOTER */
+.container_footer {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+    transition: all .4s ease-out;
+}
+
+/* ESTILOS ZONA CARDS USUARIOS */
+.container_footer_card {
+    width: 31.6%;
+    height: 86.7%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.55rem 2rem 2rem 2rem;
+    border-radius: 8px;
+    background-color: hsl(300, 43%, 22%);
+}
+
+.container_footer_card:nth-child(1) {
+    position: relative;
+    top: 2px;
+}
+
+.container_footer_card:nth-child(2) {
+    position: relative;
+    right: -1px;
+}
+
+.container_footer_card:nth-child(3) {
+    position: relative;
+    top: -2px;
+    right: -1px;
+}
+
+.container_footer_card_image {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.container_footer_card_username {
+    margin-left: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.container_footer_card_username h2 {
+    font-size: 1.06rem;
+    letter-spacing: 0.028rem;
+    font-weight: 500;
+}
+
+.container_footer_card_username p {
+    margin-top: 1px;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    color: hsl(333, 80%, 67%);
+}
+
+.container_footer_card_usercomment {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.37rem;
+    letter-spacing: 0.005rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.container_footer_card:nth-child(2) {
+    align-self: center;
+}
+
+.container_footer_card:nth-child(3) {
+    align-self: flex-end;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 980px) {
+
+    body {
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 4rem 1.5rem;
+    }
+
+    .bg-pattern-top {
+        width: 100%;
+        background-image: url(images/bg-pattern-top-mobile.svg);
+        background-size: auto;
+    }
+    
+    .bg-pattern-bottom {
+        width: 100%;
+        background-image: url(images/bg-pattern-bottom-mobile.svg);
+        background-size: auto;
+    }
+    
+    .container_header,
+    .container_footer {
+        max-width: 500px;
+        min-width: 330px;
+        margin-bottom: 2rem;
+        flex-direction: column;
+    }
+
+    .container_header_info {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .container_header_info_title {
+        max-width: 340px;
+        margin: 1rem auto 1.5rem auto;
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+    .container_header_rating {
+        width: 100%;
+        height: auto;
+    }
+
+    .container_header_rating_card,
+    .container_header_rating_card:nth-child(1),
+    .container_header_rating_card:nth-child(2) {
+        width: 100%;
+        height: 70px;
+        margin: 8px 0;
+        padding: 2.5rem 0 2.3rem 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .container_header_rating_card_title {
+        margin: 5px 0 0 0;
+    }
+
+    .container_footer {
+        height: auto;
+    }
+
+    .container_footer_card {
+        width: 100%;
+        height: 90%;
+        margin: .56rem 0;
+        padding: 2.4rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        background-color: hsl(300, 43%, 22%);
+    }
+
+}
+
+
+
+
